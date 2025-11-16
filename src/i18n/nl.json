@@ -1,0 +1,344 @@
+{
+  "common": {
+    "confirmation": "Ben je zeker dat je wil doorgaan?",
+    "errors": {
+      "NotLoggedInError": "Een ingelogd admin-account is nodig om deze actie uit te voeren",
+      "NotAllowedError": "Deze actie wordt niet ondersteund",
+      "serviceAlreadyExists": "Een dienst met deze naam bestaat al.",
+      "UnprocessablePayload": "Er ging iets mis bij het verwerken van de gegevens"
+    },
+    "moreInfo": "Meer info",
+    "navigation": {
+      "back": "Keer terug naar %{to}"
+    },
+    "no": "Nee",
+    "save": "Opslaan",
+    "services": "Diensten",
+    "yes": "Ja"
+  },
+  "components": {
+    "admin": {
+      "dashboard": {
+        "dashboard": "Dashboard",
+        "edit": "Gegevens aanpassen",
+        "notifications": "Meldingen",
+        "website": "Website",
+        "trainingDays": "Trainingdagen",
+        "consult": "Gegevens raadplegen",
+        "customers": "Klanten",
+        "bookings": "Boekingen",
+        "dogs": "Honden",
+        "breeds": "Rassen",
+        "services": "Diensten",
+        "serviceTypes": "Dienst types",
+        "pages": "Paginas",
+        "createPage": "Aanmaken"
+      }
+    },
+    "table": {
+      "noData": "Geen gegevens gevonden"
+    }
+  },
+  "entities": {
+    "breeds": {
+      "type": {
+        "small": "Klein",
+        "medium": "Middelgroot",
+        "large": "Groot"
+      }
+    },
+    "services": {
+      "category": {
+        "group": "Groepslessen",
+        "private": "Privelessen"
+      },
+      "status": {
+        "pending": "In opmaak",
+        "new": "Nieuw",
+        "normal": "Actief",
+        "disabled": "Niet-actief"
+      }
+    },
+    "customers": {
+      "verified": {
+        "verified": "Geverifieerd",
+        "notVerified": "Niet geverifieerd"
+      }
+    }
+  },
+  "pages": {
+    "admin": {
+      "bookings": {
+        "table": {
+          "createdAt": "Geboekt op",
+          "customer": "Klant",
+          "nextTraining": "Volgende training",
+          "numberOfTrainings": "Aantal trainingen",
+          "reference": "Referentie",
+          "service": "Dienst"
+        },
+        "title": "Boekingen"
+      },
+      "breeds": {
+        "table": {
+          "addRow": "Voeg ras toe",
+          "name": "Naam",
+          "type": "Type"
+        },
+        "title": "Rassen"
+      },
+      "customers": {
+        "table": {
+          "name": "Naam",
+          "email": "E-mail",
+          "address": "Adres",
+          "verified": "Geverifieerd",
+          "addRow": "Voeg klant toe"
+        },
+        "title": "Klanten"
+      },
+      "dogs": {
+        "table": {
+          "name": "Naam",
+          "breed": "Ras",
+          "sex": "Geslacht",
+          "customer": "Klant"
+        },
+        "title": "Honden"
+      },
+      "notifications": {
+        "modals": {
+          "delete": {
+            "content": {
+              "part1": "Je staat op het punt om een meding te verwijderen.",
+              "part2": "Weet je zeker dat je wil doorgaan?"
+            },
+            "title": "Melding verwijderen"
+          }
+        },
+        "table": {
+          "addRow": "Nieuwe melding aanmaken",
+          "startDate": "Startdatum",
+          "endDate": "Einddatum",
+          "notificationStartDate": "Start notificaties",
+          "createdAt": "Aangemaakt op"
+        },
+        "title": "Meldingen"
+      },
+      "pages": {
+        "table": {
+          "active": "Actief",
+          "addRow": "Voeg pagina toe",
+          "description": "Beschrijving",
+          "title": "Titel"
+        }
+      },
+      "services": {
+        "addServiceModal": {
+          "category": "Categorie",
+          "freeTravelRadius": "Gratis verplaatsing tot (km)",
+          "hasTravelCosts": "Verplaatsingskosten aanrekenen",
+          "priceExcl": "Prijs (excl. BTW)",
+          "name": "Naam",
+          "travelCost": "Kilometervergoeding (€/km)"
+        },
+        "confirmation": {
+          "delete": "Je staat op het punt om %{name} te verwijderen",
+          "disabled": "Je staat op het punt om %{name} te deactiveren",
+          "normal": "Je staat op het punt om %{name} te activeren"
+        },
+        "detail": {
+          "tabs": {
+            "details": {
+              "title": "Details"
+            },
+            "series": {
+              "title": "Reeksen"
+            },
+            "discounts": {
+              "title": "Kortingen"
+            }
+          }
+        },
+        "modal": {
+          "title": {
+            "create": "Dienst aanmaken",
+            "delete": "Dienst verwijderen",
+            "disabled": "Dienst deactiveren",
+            "normal": "Dienst activeren"
+          }
+        },
+        "success": {
+          "disabled": "Dienst succesvol gedeactiveerd",
+          "normal": "Dienst succesvol geactiveerd",
+          "remove": "Dienst succesvol verwijderd",
+          "update": "Dienst succesvol bijgewerkt"
+        },
+        "table": {
+          "addRow": "Voeg dienst toe",
+          "category": "Categorie",
+          "createdAt": "Aangemaakt op",
+          "status": "Status",
+          "name": "Naam"
+        },
+        "title": "Diensten"
+      }
+    },
+    "bookings": {
+      "form": {
+        "dateOfBirth": "Geboortedatum hond *",
+        "dogBreed": "Ras hond *",
+        "dogBreed2": "Ras hond (optioneel indien mix)",
+        "dogName": "Naam hond *",
+        "email": "E-mail *",
+        "firstName": "Voornaam *",
+        "lastName": "Achternaam *",
+        "phone": "Telefoonnummer (optioneel)",
+        "remark": "Opmerkingen (optioneel)",
+        "training": "Training *",
+        "trainingData": "Training gegevens"
+      },
+      "paragraphs": {
+        "1": "Vul onderstaand formulier in om je hond aan te melden voor een van de trainingen, vervolgens wordt je doorgeleidt naar de betaalpagina."
+      },
+      "title": "Inschrijving voor een training"
+    },
+    "home": {
+      "aboutUs": {
+        "title": "Over ons",
+        "paragraph1": {
+          "text1": "Ik ben ",
+          "text2": "gecertificeerd hondentrainer. Kleinschalig, persoonlijk en positief – zodat jij en je hond met vertrouwen samenwerken."
+        },
+        "paragraph2": "Groepslessen (max. 5 honden), privétraining op terrein of aan huis."
+      },
+      "contact": {
+        "title": "Contacteer ons"
+      },
+      "intake": {
+        "button": {
+          "call": "Bel nu",
+          "mail": "Mail voor intake",
+          "whatsapp": "WhatsApp"
+        },
+        "text": "Telefonisch, online of ter plaatse",
+        "title": "Gratis intake (15 minuten)"
+      },
+      "pricelist": {
+        "title": "Tarieven",
+        "group": {
+          "title": "Groepslessen op ons terrein"
+        },
+        "private": {
+          "title": "Privélessen op ons terrein"
+        },
+        "privateCustomer": {
+          "title": "Privélessen bij klant thuis",
+          "disclaimer": "Kilometervergoeding vanaf %{radius} km  -   €%{travelcost}/km"
+        }
+      },
+      "reviews": {
+        "title": "Reviews"
+      },
+      "schedule": {
+        "title": "Rooster & Uren",
+        "group": {
+          "title": "Groepslessen"
+        },
+        "private": {
+          "title": "Privélessen"
+        }
+      },
+      "services": {
+        "title": "Trainingen",
+        "puppy1": {
+          "title": "Puppyklas 1",
+          "subTitle": "8–12 weken • basis & socialisatie",
+          "text": "Korte oefeningen, rustig wennen, veilige kennismaking."
+        },
+        "puppy2": {
+          "title": "Puppyklas 2",
+          "subTitle": "3–6 maanden • vervolg & vertrouwen",
+          "text": "Blijf, recall, begroeten, praktijkwandeling."
+        },
+        "adolescense": {
+          "title": "Puberklas",
+          "subTitle": "6–12 maanden • focus & zelfbeheersing",
+          "text": "5 blokken traject met duidelijke doorstroom."
+        },
+        "junior": {
+          "title": "Juniorklas",
+          "subTitle": "1–2 jaar • jaartraject 10 blokken",
+          "text": "Precisie, praktijk, verleiding, rust, diploma."
+        },
+        "adult": {
+          "title": "Volwassenenklas",
+          "subTitle": "+2 jaar • jaartraject 10 blokken",
+          "text": "Routines, prikkelmanagement, veiligheid, diploma."
+        },
+        "private": {
+          "title": "Privétraining",
+          "subTitle": "Alle leeftijden • op maat",
+          "text": "Thuis of op terrein • gratis intake 15 min."
+        }
+      },
+      "specializations": {
+        "title": "Onze specialisaties",
+        "text": "Waar vertrouwen, plezier en begeleiding centraal staan.",
+        "sections": {
+          "puppyGuidance": {
+            "title": "Puppybegeleiding",
+            "text": "Socialisatie en basiscommando’s."
+          },
+          "adolescentBehavior": {
+            "title": "Pubergedrag",
+            "text": "Focus, zelfcontrole en rustig leren omgaan met prikkels."
+          },
+          "familyCounseling": {
+            "title": "Gezinsbegeleiding",
+            "text": "Praktische training in gezinscontext, thuis of op terrein."
+          }
+        }
+      }
+    },
+    "services": {
+      "slug": {
+        "subscribe": {
+          "title": "Reserveer je plek",
+          "manner": "Kies hoe je wil inschrijven",
+          "email": "Reserveer via e-mail",
+          "whatsapp": "Reserveer via WhatsApp"
+        },
+        "subTitle": {
+          "puppy1": "Leeftijd: 8–12 weken",
+          "puppy2": "Leeftijd: 3–6 maanden",
+          "adolescense": "Leeftijd: 6–12 maanden",
+          "junior": "Leeftijd: 1–2 jaar",
+          "adult": "Leeftijd: +2 jaar",
+          "private": "Leeftijd: alle leeftijden"
+        },
+        "title": {
+          "puppy1": "Puppyklas 1",
+          "puppy2": "Puppyklas 2",
+          "adolescense": "Puberklas",
+          "junior": "Juniorklas",
+          "adult": "Volwassenenklas",
+          "private": "Privétraining"
+        },
+        "text": {
+          "puppy1": "Een zachte start voor je pup: socialisatie, basiscommando’s en veilig wennen.",
+          "puppy2": "Vervolg op Puppy 1: aandacht, recall, begroeten, verleidingen en korte praktijkwandeling.",
+          "adolescense": "Focus & zelfbeheersing in de puberfase. Doorstroom per blok na slagen in les 5.",
+          "junior": "Jaartraject met 10 blokken. Precisie, praktijk, rust & verleiding. Doorstroom bij elke bloktest",
+          "adult": "Jaartraject met 10 blokken. Routines, prikkelmanagement, veiligheid & diploma.",
+          "private": "Persoonlijke begeleiding op maat – thuis of op het terrein. Gericht op wat jij en je hond nu nodig hebben."
+        },
+        "lessons": "Blokken & lessen"
+      }
+    }
+  },
+  "validation": {
+    "invalidFields": "U heeft nog ongeldige velden",
+    "required": "%{name} is een verplicht veld"
+  }
+}

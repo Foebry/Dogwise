@@ -5,11 +5,19 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+    --color-primary: #0e7a6f;
+    --color-tertiary: #f16957;
+}
+
+@utility color-primary {
+  color: var(--color-primary);
+}
+@utility bg-primary {
+  background-color: var(--color-primary);
+}
+@utility bg-tertiary {
+  background-color: var(--color-tertiary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +32,104 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  background-color: #f9f7f2;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+#__next {
+  position: relative;
+}
+header h1 {
+  text-shadow: -2px 2px 5px #cdcdcd;
+}
+
+.formstep_bullet {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: block;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+.formstep {
+  position: relative;
+  color: gray;
+}
+.formstep::before {
+  content: '';
+  border: 1px solid grey;
+  position: absolute;
+  width: 100%;
+  bottom: 12.5px;
+  right: 50%;
+}
+.formstep:first-of-type::before {
+  width: 0%;
+}
+.formstep_bullets {
+  overflow: hidden;
+}
+
+.formstep.active {
+  color: black;
+}
+.formstep.active::before {
+  border-color: #40909b;
+}
+.formstep.active .formstep_bullet {
+  border-color: #40909b;
+  background-color: #40909b;
+}
+.images .image {
+  width: 166%;
+}
+
+.images .image {
+  right: -35%;
+  top: -35%;
+}
+.images:nth-of-type(2) .image {
+  left: -30%;
+  top: -50%;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#content-service-page:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  pointer-events: none;
+}
+.dog-select > div:nth-of-type(2) > div > div {
+  z-index: 999999 !important;
+}
+
+.page-container {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 5rem 1.25rem 0 1.25rem;
+}
+
